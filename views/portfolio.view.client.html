@@ -1,13 +1,227 @@
+<!-- ================================= -->
+<!--  HTML - hypertext markup language -->
+<!-- ================================= -->
+
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- ===================== -->
+<!-- document head element -->
+<!-- ===================== -->
+
 <head>
-    <meta charset="UTF-8">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <title>Luis Lopez Portfolio</title>
+
+    <!-- 1st meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 2nd document title -->
+    <title>Luis E Lopez Web Development</title>
+
+    <!-- 3rd bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- 4th google apis fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+
+    <!-- 5th custom CSS file -->
+    <link rel="stylesheet" href="../css/portfolio-style.css">
+
 </head>
-<body>
-<div class="container-fluid jumbotronhthasasdasdasdasdasdasd">
-        <img src="../images/Header.image.jpg" id="header--image" alt="test">
+
+<!-- ===================== -->
+<!-- document body element -->
+<!-- ===================== -->
+
+<body id="mypage" data-spy="scroll" data-target=".navbar">
+
+<!-- ================== -->
+<!-- navigation section -->
+<!-- ================== -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#mypage">LUIS / LOPEZ</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= -->
+<!-- jumbotron section -->
+<!-- ================= -->
+
+<div class="jumbotron" data-stellar-background-ratio="0.2">
+    <div class="text-center" id="company-line">
+    </div>
 </div>
+
+<!-- ============= -->
+<!-- about section -->
+<!-- ============= -->
+
+<div id="about" class="container-fluid anchor">
+    <div class="box">
+        <h1 class="text-center">ABOUT</h1>
+        <br><br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
+
+
+    </div><!-- /box -->
+</div><!-- /container-fluid -->
+
+<!-- =============== -->
+<!-- work section -->
+<!-- =============== -->
+
+<div id="work" class="container-fluid anchor bg-color-primary-3g">
+    <div class="box">
+        <h1 class="text-center">WORK</h1>
+        <br><br>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <h2>Web Development Portfolio</h2>
+                <p>Websites developed by me</p>
+
+                <a href="#about"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="about">View details &raquo;</button></a>
+
+            </div><!-- /col -->
+            <div class="col-xs-12 col-md-4">
+                <h2>Web Apps Portfolio</h2>
+                <p>Info about web apps developed by me</p>
+
+                <a href="#portfolio"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="portfolio">View details &raquo;</button></a>
+
+            </div><!-- /col -->
+            <div class="col-xs-12 col-md-4">
+                <h2>Personal Projects</h2>
+               <p> Info about my personal projects</p>
+
+                <a href="#service"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="service">View details &raquo;</button></a>
+
+            </div><!-- /col -->
+        </div><!-- /row -->
+
+    </div><!-- /box -->
+</div><!-- /container-fluid -->
+
+
+
+<!-- =============== -->
+<!-- contact section -->
+<!-- =============== -->
+
+<div id="contact" class="container-fluid anchor">
+    <div class="box">
+        <h1 class="text-center">CONTACT</h1>
+        <br><br>
+
+        <p class="text-center">contact me and I'll get back to you within 24 hours</p>
+        <br><br>
+
+        <div class="col-xs-12 col-md-4">
+            <div class="address">
+                <p><span class="glyphicon glyphicon-map-marker"></span><span class="color-primary-3g">...</span>465 Brickell Avenue<br>
+                    <span class="color-primary-3g">......</span>Miami,Florida,33131</p>
+                <p><span class="glyphicon glyphicon-earphone"></span><span class="color-primary-3g">...</span>+1 6178693855</p>
+                <a href="mailto:llopez@avlsolutions.com" id="e-mail">
+                    <p><span class="glyphicon glyphicon-envelope"></span><span class="color-primary-3g">...</span>llopez@avlsolutions.com</p>
+                </a>
+                <br>
+            </div>
+        </div><!-- /col-xs-12 col-md-4 -->
+
+        <div class="col-xs-12 col-md-8">
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="name">your name *</label>
+                    <input class="form-control" id="name" type="text" maxlength="100" placeholder="e.g. John Miller" required="required" title="Required Information">
+                    <p id="visible-name"></p>
+                </div>
+                <div class="form-group">
+                    <label for="company">company name or organization</label>
+                    <input class="form-control" id="company" type="text" maxlength="100" placeholder="e.g. John Miller Corporation" title="Only for Companies and Organizations">
+                    <p id="visible-company"></p>
+                </div>
+                <div class="form-group">
+                    <label for="email">your e-mail address *</label>
+                    <input class="form-control" id="email" type="email" maxlength="100" placeholder="e.g. john.miller@miller.com" required="required" title="Required Information">
+                    <p id="visible-email"></p>
+                </div>
+                <div class="form-group">
+                    <label for="phone">your phone number</label>
+                    <input class="form-control" id="phone" type="tel" maxlength="100" placeholder="e.g. +1 888-888-8888" title="Desktop Phone or Mobile Phone">
+                    <p id="visible-phone"></p>
+                </div>
+                <div class="form-group">
+                    <label for="message">your message *</label>
+                    <textarea class="form-control message-box" id="message" style="resize:none" cols="40" rows="5" maxlength="800" placeholder="e.g. Let's work together!" required="required" title="Required Information"></textarea>
+                    <strong><p id="char-count"></p></strong>
+                    <p id="visible-comment"></p>
+                    <strong><p class="bg-color-primary-0" id="visible-feedback"></p></strong>
+                </div>
+                <div class="submit-button">
+                    <button type="submit" class="btn btn-default" id="submit-btn-email">Submit</button>
+                </div>
+            </form>
+        </div><!-- /col-xs-12 col-md-8 -->
+
+    </div><!-- /box -->
+</div>
+
+<!-- ============== -->
+<!-- footer section -->
+<!-- ============== -->
+
+<footer class="container-fluid anchor text-center bg-color-primary-2g">
+    <div class="box">
+        <a href="#mypage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up color-primary-0g"></span>
+        </a>
+        <p>&copy Luis E Lopez 2017</p>
+    </div>
+</footer><!-- /container-fluid -->
+
+<!-- ===================== -->
+<!-- JavaScript definition -->
+<!-- ===================== -->
+
+<!-- jQuery - library of pre-programmed JavaScript functions -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- parallax effect -->
+<!-- only works with jquery-1.12.4.min.js -->
+<script src="js/jquery.stellar.min.js"></script>
+
+<!-- custom JavaScript file  -->
+<script src="js/work.js"></script>
+<script src="js/scripts.js"></script>
+
 </body>
+
 </html>
